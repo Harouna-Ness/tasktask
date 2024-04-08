@@ -1,0 +1,96 @@
+/* bleu: #35DADB
+vert: #7EDBBC
+bg: #F4F9F9 */
+:root{
+    --primaire: #7EABBC;
+    --vert: #7EDBBC;
+    --bleu: #3577db;
+    --bg-color: #F4F9F9;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: var(--bg-color)
+}
+
+.navbar{
+    color: white;
+    background-color: var(--bleu);
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* .zoneText{
+    height: 40px;
+    width: 80vw;
+    background-color: grey;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: fixed;
+    bottom: 25px;
+} */
+
+.action-btn{
+    height: 40px;
+    width: 70px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--bleu);
+    border-radius: 40px;
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    box-shadow: 1px 1px 5px #e8e9e9;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    /* background-color: #e9f4f4; */
+    margin: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.container p{
+    font-size: 20px;
+    font-family: cursive;
+    text-decoration: line-through;
+}
+
+.mark{
+    display: none;
+    border: 1px solid var(--vert);
+    height: 16px;
+    width: 16px;
+    border-radius: 40px;    
+    margin-right: 10px;
+}
+
+.doneMark{
+    background-color: var(--primaire);
+    border: 1px solid var(--vert);
+    height: 16px;
+    width: 16px;
+    border-radius: 40px;    
+    margin-right: 10px;
+}
+
+.icons{
+    height: 20px;
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 10px;
+}
