@@ -9,64 +9,19 @@
 <body>
     <div class="navbar">
         <h2>TaskTask</h2>
-    </div>
-
-    <div class="action-btn" id="action-btn">
-        <h3>Créer</h3>
-    </div>
-
-    <div class="zoneText">
-        <input type="text" name="zoneText" id="zoneText">
-    </div>
-
-    <!-- <div class="container">
-        <div class="mark"></div>
-        <div class="doneMark">
-            <img src="checkmark-sharp.svg" alt="" srcset="">
+        <input class="zoneText" placeholder="Ajoutez une tâche" type="text" name="zoneText" id="zoneText">
+        <div class="action-btn" id="action-btn">
+            <h3>Créer</h3>
         </div>
-        <p>une première tâche</p>
-        <div class="icons">
-            <img id="modif-btn" src="pencil-sharp.svg" alt="" srcset="">
-            <img id="supp-btn" src="trash-sharp.svg" alt="" srcset="">
-        </div>
-    </div> -->
+    </div>
 
-    <script>
-             
-        var btnAction = document.getElementById("action-btn");
-        btnAction.addEventListener("click", click);
+    <div class="liste">
+        <h2>Liste</h2>
+    </div>
+    <div class="listeTermine">
+        <h2>Terminées</h2>
+    </div>
 
-        function click(){
-            var container = document.createElement("div");
-            var mark = document.createElement("div");
-            var doneMark = document.createElement("div");
-            var p = document.createElement("p");
-            var icons = document.createElement("div");
-            var suppBtn = document.createElement("img");
-            var modifBtn = document.createElement("img");
-            var markDoneImg = document.createElement("img");
-            container.className = "container";
-            mark.className = "mark";
-            doneMark.className = "doneMark";
-            icons.className = "icons";
-            p.textContent = 'Nouvelle tâche ajoutée!';
-            modifBtn.src = "pencil-sharp.svg";
-            modifBtn.alt = "image";
-            suppBtn.src = "trash-sharp.svg";
-            suppBtn.alt = "image";
-            markDoneImg.src = "checkmark-sharp.svg";
-            markDoneImg.alt ="image";
-
-            document.body.appendChild(container);
-            container.append(mark);
-            container.append(doneMark);
-            doneMark.append(markDoneImg);
-            container.append(p);
-            container.append(icons);
-            icons.append(modifBtn);
-            icons.append(suppBtn);
-        }
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

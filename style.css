@@ -24,64 +24,62 @@ body{
     padding-right: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-/* .zoneText{
-    height: 40px;
-    width: 80vw;
-    background-color: grey;
+.zoneText{
+    /* background-color: grey; */
+    flex: 1;
     margin-left: 10px;
     margin-right: 10px;
-    position: fixed;
-    bottom: 25px;
-} */
+}
 
 .action-btn{
-    height: 40px;
-    width: 70px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background-color: var(--bleu);
-    border-radius: 40px;
-    position: fixed;
-    bottom: 25px;
-    right: 20px;
-    box-shadow: 1px 1px 5px #e8e9e9;
 }
 
 .container{
-    display: flex;
-    align-items: center;
     padding-left: 10px;
     /* background-color: #e9f4f4; */
     margin: 10px;
     border-radius: 8px;
     position: relative;
+    cursor: pointer;
 }
 
-.container p{
+.leftContent{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.leftContent p{
     font-size: 20px;
     font-family: cursive;
-    text-decoration: line-through;
+    overflow-wrap: wrap;
+    cursor: pointer;
+    /* text-decoration: line-through; */
+}
+.leftContent .input, .leftContent .icons{
+    display: none;
 }
 
 .mark{
-    display: none;
+    /* display: none; */
     border: 1px solid var(--vert);
     height: 16px;
-    width: 16px;
+    min-width: 16px;
     border-radius: 40px;    
     margin-right: 10px;
 }
 
 .doneMark{
+    display: none;
     background-color: var(--primaire);
     border: 1px solid var(--vert);
     height: 16px;
-    width: 16px;
+    min-width: 16px;
     border-radius: 40px;    
     margin-right: 10px;
 }
@@ -93,4 +91,39 @@ body{
     justify-content: space-between;
     position: absolute;
     right: 10px;
+    color: var(--primaire);
+}
+
+.input{
+    flex: 1;
+    margin-right: 70px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.liste, .listeTermine{
+    display: none;
+}
+
+.liste h2, .listeTermine h2{
+    font-family: cursive;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+span{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--primaire);
+}
+
+.priorite{
+    width: 50px;
+}
+
+.rContent{
+    display: none;
 }
